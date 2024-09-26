@@ -1,0 +1,54 @@
+.div_1 {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-left: 10px;
+}
+
+.div_2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px,
+}
+
+.div_3 {
+  display: flex;
+  gap: 10px 
+}
+
+.div_4 {
+  width: 50%;
+  display: "flex";
+  flex-direction: "column";
+  gap: 10px;
+}
+
+.div_5 {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 10px;
+}
+
+.div_6 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container__input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%; 
+  margin: 0 auto 4px auto;
+}
+
+.container__input p {
+  font-weight: 600;
+}

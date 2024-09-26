@@ -1,0 +1,178 @@
+.ContenedorFormulario {
+	width: 476px;
+
+	padding: 56px 0;
+	background: #ffffff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+
+	border-radius: 10px;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.error {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	margin-bottom: 5px;
+  }
+  
+
+  .errorContainer {
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	
+  }
+  
+  .error_container{
+	background-color: #292929d0;
+	color: white;
+
+	width: 80%;
+	height: auto;
+	text-align: center;
+	padding: 10px 10px 5px 10px;
+	border-radius: 2px;
+  }
+
+/*------------LOGO-----------*/
+.logoImg {
+	background-size: cover;
+}
+.p_isesion {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*imputs*/
+.label {
+	width: 80%;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.inputUsuario {
+	width: 100%;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 26px 50px 10px 26px;
+	border: 2px solid rgb(226, 226, 226);
+}
+.inputUsuario:focus {
+	outline: none;
+	border: 2px solid #0671e0;
+}
+.inputUsuario:focus + .spanName{
+	position: absolute;
+	color: #737373;
+	font-size: 13px;
+	font-weight: bold;
+	bottom: 60%;
+	left: 27px;
+	transition: 0.2s ease;
+}
+.inputUsuario:not(:placeholder-shown)+.spanName{
+	position: absolute;
+	color: #737373;
+	font-size: 13px;
+	font-weight: bold;
+	bottom: 60%;
+	left: 27px;
+	transition: 0.2s ease;
+}
+
+.inputContraseña {
+	width: 100%;
+	background-color: rgba(239, 245, 254);	
+	font-size: 16px;
+	border-radius: 4px;
+	border: 2px solid #ffffff;
+	padding: 18px 50px 18px 26px;
+	font-weight: bold;
+	
+}
+.inputContraseña:focus {
+	outline: none;
+	border: 2px solid #0671e0;
+}
+
+.inputContraseña::placeholder {
+	font-weight: bold;
+}
+.button {
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	color: white;
+	background: #0671e0;
+	border: none;
+	width: 80%;
+	padding: 15px;
+	border: 1px solid #415e9c;
+	border-radius: 4px;
+}
+.button:hover {
+	background: #004c9e;
+}
+
+.enlace {
+	display: flex;
+	justify-content: flex-end;
+	width: 80%;
+	padding: 5px 0px 20px 0;
+}
+.enlace a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0671e0;
+}
+
+/*-----------Codigo de Usario*/
+.spanName {
+	position: absolute;
+	color: #737373;
+	font-size: 16px;
+	font-weight: bold;
+	bottom: 35%;
+	left: 27px;
+	transition: 0.2s ease;
+}
+
+/*-----------ICONOS---------*/
+.iconUser {
+	position: absolute;
+	bottom: 35%;
+	left: 90%;
+	width: 20px;
+	height: 20px;
+}
+
+.iconHide {
+	cursor:pointer;
+	position: absolute;
+	bottom: 35%;
+	left: 90%;
+	width: 20px;
+	height: 20px;
+}
+
+.iconLogin {
+	position: absolute;
+	bottom: 25%;
+	left: 58%;
+	width: 20px;
+	height: 20px;
+}

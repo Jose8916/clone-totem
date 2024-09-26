@@ -1,0 +1,14 @@
+.item__group {
+	width: 100%;
+	display: grid;
+	gap: 5px;
+}
+
+.item__column {
+	grid-template-columns: 1fr;
+}
+
+.item__row {
+	grid-template-columns: max-content 1fr;
+	align-items: center;
+}

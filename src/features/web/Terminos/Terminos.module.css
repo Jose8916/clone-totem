@@ -1,0 +1,28 @@
+.container__terminos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin: 2rem 4rem;
+}
+
+.principal__title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  color: (#232c3d);
+}
+
+.second__title {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #232c3d;
+
+}
+
+.text {
+  margin-bottom: 1rem;
+  font-weight: 400;
+
+}
+

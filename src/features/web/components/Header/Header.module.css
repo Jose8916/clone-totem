@@ -1,0 +1,56 @@
+.header_contenedor {
+	min-height: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.header_mitotem {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.header_mitotem_contenedor {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	justify-content: end;
+	align-items: center;
+}
+
+.header_mitotem_img {
+	height: 50px;
+	width: 60px;
+	display: grid;
+	justify-content: end;
+	align-items: end;
+}
+
+.header_mitotem_title {
+	text-transform: uppercase;
+	color: #9b9b9b;
+}
+
+.header_ingresar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_ingresar_button {
+	display: grid;
+	align-items: center;
+	padding: 15px 20px;
+	background-color: #f01616;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-wrap: nowrap;
+	border-radius: 30px;
+}

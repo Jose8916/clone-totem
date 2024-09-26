@@ -1,0 +1,15 @@
+.sectionStructure__container {
+	height: fit-content;
+	background-color: #fff;
+	border-radius: 15px;
+	border: solid 1px var(--border-color-app);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.noMargin {
+	margin: 0;
+}

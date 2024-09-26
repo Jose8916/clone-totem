@@ -1,0 +1,50 @@
+.container__drawer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+	min-width: 300px;
+	height: calc(100vh - 55px);
+	/* min-height: calc(100vh - 55px); */
+	background-color: #232c3d;
+
+	color: #fff;
+	box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	/* padding-top: 20px; */
+
+	position: sticky;
+	top: 55px;
+	z-index: 2;
+
+	overflow-y: auto;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.container__drawer::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+.container__drawer::-webkit-scrollbar:vertical {
+	width: 10px;
+}
+
+.container__drawer::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+	display: none;
+}
+
+.container__drawer::-webkit-scrollbar:horizontal {
+	height: 10px;
+}
+
+.container__drawer::-webkit-scrollbar-thumb {
+	background-color: #c5c5c5;
+	border-radius: 20px;
+	border: 2px solid #0e141f;
+}
+
+.container__drawer::-webkit-scrollbar-track {
+	border-radius: 10px;
+}

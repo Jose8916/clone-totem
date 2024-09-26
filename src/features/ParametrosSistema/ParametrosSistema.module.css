@@ -1,0 +1,55 @@
+.additionalClassName {
+	margin-bottom: 0;
+}
+.titleStyle {
+	margin-bottom: 8px;
+}
+.descriptionStyle {
+	margin-bottom: 15px;
+}
+.itemsList {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: self-start;
+	justify-content: flex-start;
+	width: 60%;
+}
+.itemContainer {
+	flex-basis: 50%;
+}
+.labelStyle {
+	display: inline-block;
+	min-width: 90px;
+	margin-right: 20px;
+}
+.inputStyle {
+	width: 75px;
+	margin-bottom: 8px;
+	padding: 6px;
+	text-align: right;
+	border-radius: 5px;
+	border: 1px solid #ced4da;
+	appearance: none;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+	background: #ffffff;
+	color: #495057;
+	font-size: 14px !important;
+}
+.inputStyle:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #C7D2FE;
+    border-color: #6366F1;
+}
+
+@media only screen and (max-width: 1300px) {
+	.itemsList {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.itemsList {
+		width: auto;
+	}
+}

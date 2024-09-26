@@ -1,0 +1,33 @@
+.Selection_toggle {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    /* justify-content: center; */
+    
+}
+
+
+.Selection_toggle label {
+    display: flex;
+    justify-content: start;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    width: 200px;
+}
+
+
+
+.toggle{
+    width: 20%;
+font-size: 12px;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+  
+ 
+  @media (max-width: 1282px) {
+ 
+  }

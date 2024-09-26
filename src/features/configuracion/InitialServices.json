@@ -1,0 +1,32 @@
+[
+	{
+		"id": 0,
+		"name": "Servicio de Market",
+		"status": false,
+		"area": ""
+	},
+	{
+		"id": 3,
+		"name": "Servicio de Cajeros",
+		"status": false,
+		"options": [
+			{ "label": "BCP", "isChecked": false },
+			{ "label": "BBVA", "isChecked": false },
+			{ "label": "Scotiabank", "isChecked": false },
+			{ "label": "Interbank", "isChecked": false }
+		]
+	},
+	{
+		"id": 2,
+		"name": "Servicio de Carwash",
+		"status": false,
+		"area": ""
+	},
+
+	{
+		"id": 4,
+		"name": "Servicio de Llantas",
+		"status": false,
+		"area": ""
+	}
+]

@@ -1,0 +1,77 @@
+.calendar_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  }
+
+.modal_excel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 0 0;
+}
+
+.loading_modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section__date {
+	height: fit-content;
+	background-color: #fff;
+	border-radius: 15px;
+	border: solid 1px var(--border-color-app);
+	display: flex;
+  margin:0 auto;
+  width: max-content;
+	padding: 20px 25px;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0;
+}
+.totalsContainer {
+  margin: 0;
+}
+.selectContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+.labelStyle {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.inputStyle {
+	width: 105px;
+	margin: 0;
+	padding: 6px;
+	text-align: right;
+	border-radius: 5px;
+	border: 1px solid #ced4da;
+	appearance: none;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+	background: #ffffff;
+	color: #495057;
+	font-size: 14px !important;
+  text-align: center;
+}
+.inputStyle:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #C7D2FE;
+  border-color: #6366F1;
+}
+

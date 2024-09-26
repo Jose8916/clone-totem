@@ -1,0 +1,14 @@
+.contentBox__container {
+	width: 100%;
+	height: fit-content;
+	display: grid;
+	gap: 10px;
+	padding: 20px;
+	border: 1px solid #dee2e6;
+	border-radius: 6px;
+	background-color: #fff;
+}
+
+.backgroundActive {
+	background-color: #f8f9fa;
+}

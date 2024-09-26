@@ -1,0 +1,73 @@
+.login__container {
+	width: 500px;
+	display: grid;
+	gap: 20px;
+
+	margin-top: 5rem;
+}
+
+.login__title {
+	text-align: center;
+}
+
+.placa__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.placa__code {
+	border: solid 2px #333;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+.placa__code__text,
+.placa__label {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.datos__container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 30px 0;
+}
+
+.datos__item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente todos los elementos en el centro */
+    justify-content: flex-start; /* Alineación horizontal al inicio */
+    gap: 10px;
+}
+
+.datos__item__label, .datos__item__text {
+    align-self: flex-start; /* Asegura alineación vertical al inicio dentro de su contenedor flex */
+}
+
+.datos__item__label {
+	font-weight: 600;
+	width: 250px;
+	font-size: 18px;
+	color: #333;
+}
+.datos__item__text {
+	font-size: 18px;
+	flex-grow: 1
+}
+.customCopyIcon{
+	width: 20px; 
+	height: 20px; 
+	background-color: 'transparent',;
+	color: #000;
+	padding: 0; 
+	border: 'none';
+}
+.customCopyIcon:hover {
+	box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #9dc1fb, 0 1px 2px 0 rgb(0, 0, 0);
+}
+
+.datos__item__button {
+    margin-left: auto;
+}

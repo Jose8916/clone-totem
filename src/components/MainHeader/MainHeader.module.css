@@ -1,0 +1,141 @@
+.mainHeader__container {
+	width: 100%;
+	height: 55px;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+
+	border-bottom: 1px solid #ecf0f3;
+	background-color: #fff;
+
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+.mainHeader__profile {
+	width: 38px;
+	height: 38px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+
+	border-radius: 100%;
+	display: grid;
+	place-content: center;
+
+	cursor: pointer;
+}
+
+.mainHeader__title {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+/* Menu */
+
+.profileMenu {
+	width: 200px;
+
+	position: absolute;
+	bottom: -65px;
+	right: 20px;
+
+	box-shadow: 0 0 10px rgba(155, 155, 155, 0.5);
+
+	background-color: #fff;
+
+	border-radius: 0.5rem;
+	padding: 20px;
+
+	z-index: 2;
+}
+
+.profileMenu__title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.profileMenu__list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.profileMenu__item {
+	height: 25px;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	color: #333;
+	cursor: pointer;
+}
+
+/* navbar principal */
+.mainHeader__main__nav {
+	display: flex;
+	gap: 30px;
+}
+
+.mainHeader__main__nav__item {
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 5px 10px;
+
+	/* Para cuando veo el redux, no se agrande el height del color */
+	/* white-space: nowrap; */
+}
+.mainHeader__main__nav__item:hover {
+	background-color: var(--primary-color-app);
+	color: #fff;
+	border-radius: 4px;
+}
+
+/* Activando main nav */
+.nav__active {
+	background-color: var(--primary-color-app);
+	color: #fff;
+	border-radius: 4px;
+}
+
+/* navbar de perfil */
+
+.mainHeader__navbar__container {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.mainHeader__navbar {
+	display: flex;
+	gap: 15px;
+}
+
+.mainHeader__navbar li {
+	font-weight: 500;
+	cursor: pointer;
+}
+
+
+
+.name__backoffice {
+	display: flex;
+	flex-direction: column; 
+	align-items: center
+}
+
+.name__station {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.current__date {
+	font-size: 1.1rem;
+}

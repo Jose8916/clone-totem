@@ -1,0 +1,166 @@
+.main__content {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  gap: 2.5rem; 
+}
+
+.section__dashboard__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  height: 100%;
+}
+
+.section_structure {
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  width: 43%;
+  padding: 20px;
+  text-align: center;
+  background-color: #232c3d;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+}
+
+.dashboard_resume_data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.dashboard_resume_data h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.sideSection {
+  grid-area: sideSection;
+  background-color: #7af05f;
+  grid-row: 1 / span 3;
+}
+
+.icon_up {
+  background-color: #e3f8dd;
+  display: inline;
+  font-size: 10px;
+  padding: 0.1rem 0.3rem;
+  border-radius: 100%;
+}
+
+.dashboard_data {
+  text-align: center;
+  font-weight: bold;
+}
+
+.icon_up span {
+  color: #53e72a;
+  font-size: 10px;
+}
+
+.icon_up {
+  text-align: center;
+}
+
+.data_span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+}
+
+.data_p {
+  color: #3a3939cc;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.data_p span {
+  font-weight: bold;
+}
+
+.dashboard_totem {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.dashboard_totem p {
+  color: white;
+  font-weight: bold;
+}
+
+.dashboard_totem span {
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 0.3rem;
+}
+
+.logo_totem {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.icon__style {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 19px;
+  margin: 0 5px;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.div__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0,
+}
+
+.div__2 {
+  display: flex;
+  gap: 0.5rem;
+  align-items: start;
+  margin: 1rem 0.2rem;
+}
+
+.separator {
+  width: 3px;
+  height: 100px;
+  background: white;
+  margin: 0 1rem;
+}
+
+.container__item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.p__1 {
+  font-weight: 600;
+  font-family: Roboto;
+  font-size: 1.2rem;
+}

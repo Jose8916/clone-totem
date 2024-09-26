@@ -1,0 +1,17 @@
+.container_turno {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.container_turno:last-child {
+  margin-bottom: 0;
+
+}
+.item p {
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 0.3rem;
+}

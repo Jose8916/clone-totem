@@ -1,0 +1,17 @@
+version: "3"
+services:
+  web:
+    image: registry.gitlab.com/totem_frontend_web/totem_frontend_web:latest
+    build: .
+    ports:
+      - "8081:80"
+    environment:
+      - VIRTUAL_HOST=totem.merakioffice.com
+      - LETSENCRYPT_HOST=totem.merakioffice.com
+      - LETSENCRYPT_EMAIL=avaldivieso@sempiterno-group.com
+    networks:
+      - proxy
+    restart: always
+networks:
+  proxy:
+    external: true

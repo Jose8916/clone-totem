@@ -1,0 +1,12 @@
+.column__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.labelStyle {
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 0;
+  margin: 0;
+}

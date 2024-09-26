@@ -1,0 +1,12 @@
+.title__table {
+	width: fit-content;
+
+	font-weight: 700;
+	font-size: 14px;
+
+	/* background-color: deeppink; */
+	background-color: steelblue;
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 25px;
+}

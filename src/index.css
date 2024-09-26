@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color-app: #232c3d;
+	/* --secondary-color-app: #1cbec2; */
+	/* --support-color-app: #ffba7c; */
+	--background-color-app: #f5f8fa;
+	--border-color-app: #ecf0f3;
+	--border-color-app-two: #333;
+	--button-color: #6366f1;
+	--button-color-warning: #ff005a;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+	Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style: none;
+}
+
+.section__container {
+	padding: 0 10%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+input {
+	font-size: 13px !important;
+}
+.p-button {
+	font-size: 13px !important;
+}
+
+.title__sections {
+	font-size: 1.75rem;
+	font-weight: 700;
+	font-family: "Roboto", sans-serif;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: #eeeeec;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #4f46e5;
+}
+
+.msg-error {
+	color: #ff005a;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+}

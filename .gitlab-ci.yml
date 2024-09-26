@@ -1,0 +1,40 @@
+stages:
+  - build_image
+  - deploy
+
+variables:
+  DOCKER_IMAGE_NAME: "totem_frontend_web/totem_frontend_web"
+  DOCKER_IMAGE_TAG: "latest"
+  CI_REGISTRY: "registry.gitlab.com"
+  AWS_INSTANCE_IP: "$SSH_SERVER"
+  AWS_SSH_USER: "$SSH_USER"
+  AWS_SSH_KEY: "$AWS_SSH_KEY"
+
+build_image:
+  stage: build_image
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker --version
+    - echo $CI_REGISTRY_USER
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker build -t $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG  .
+    - docker push $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+
+deploy:
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y openssh-client
+    - echo "$SSH_KEY" | tr -d '\r' > key.pem
+    - chmod 600 key.pem
+    - ssh-keygen -p -f key.pem -m pem
+    - eval $(ssh-agent -s)
+    - ssh-add key.pem
+    - scp -i key.pem -o StrictHostKeyChecking=no docker-compose.yml $AWS_SSH_USER@$AWS_INSTANCE_IP:/home/ubuntu/totem-web/
+    - ssh -i key.pem -o StrictHostKeyChecking=no $AWS_SSH_USER@$AWS_INSTANCE_IP "docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY"
+    - ssh -i key.pem -o StrictHostKeyChecking=no $AWS_SSH_USER@$AWS_INSTANCE_IP "docker pull $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG"
+    - ssh -i key.pem -o StrictHostKeyChecking=no $AWS_SSH_USER@$AWS_INSTANCE_IP "docker compose -f /home/ubuntu/totem-web/docker-compose.yml up -d --force-recreate"
+  only:
+    - main

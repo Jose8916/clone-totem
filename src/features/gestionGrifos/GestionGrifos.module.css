@@ -1,0 +1,10 @@
+.gestion__details {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.back__btn{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

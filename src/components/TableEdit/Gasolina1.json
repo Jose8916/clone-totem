@@ -1,0 +1,14 @@
+{
+  "data": [
+      {"id": "1000","Rango de Consumo": "S/ 20 - S/ 50","Rango de Consumo 2": "S/ 50 - S/ 150","Rango de Consumo 3": "Tanque Lleno"}   
+  ],
+
+  "data2": [
+    {"id": "1000","Rango de Consumo": "S/ 25 - S/ 55","Rango de Consumo 2": "S/ 55 - S/ 155","Rango de Consumo 3": "Tanque Lleno"}   
+  ],
+  "data3": [
+    {"id": "1000","Precio Especial": "S/ 20 x Gal","Precio Especial 2": "S/ 18 x Gal","Precio Especial 3": "S/ 17 x Gal"}   
+  ]
+  
+
+}

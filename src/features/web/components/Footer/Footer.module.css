@@ -1,0 +1,25 @@
+
+
+footer{
+    height: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #F01616;
+}
+
+.footer_acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_links{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

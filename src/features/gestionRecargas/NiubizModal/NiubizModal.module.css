@@ -1,0 +1,14 @@
+.box__section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.box__transaction {
+	display: flex;
+}
+
+.box__label {
+  width: 200px;
+  font-weight: 700;
+}

@@ -1,0 +1,62 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 20px;
+	margin-bottom: 1rem;
+}
+
+.containe__1,
+.container__main {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.container__main {
+	gap: 15px;
+}
+
+.containe__1 div,
+.containe__1 input {
+	width: 70px;
+}
+
+.containe__1 p {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.container__button {
+	margin: 1rem 0;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height: 45px;
+	padding: 0.5rem 0;
+	background-color: #28a745;
+	color: white;
+	font-weight: 500;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.icon__style {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	font-size: 19px;
+	margin: 0 5px;
+	padding: 2px;
+	font-weight: bold;
+}
+
+/*  */
+
+.tipoGasolina__text {
+	text-transform: uppercase;
+	font-weight: 700;
+}
